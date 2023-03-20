@@ -1,0 +1,41 @@
+#formTarefa {
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    gap: 0px 10px;
+    display: flex;
+    width: max-content;
+}
+
+.inputForm {
+    color: #888888;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    height: 30px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: #252628;
+    padding: 0px 5px 0px 5px;
+}
+
+.inputForm::placeholder {
+    color: #888888;
+}
+
+.inputForm:focus {
+    color: #f1f1f1;
+}
+
+.buttonForm {
+    color: white;
+    border-width: 0px;
+    border-radius: 5px;
+    min-width: 100px;
+    max-width: max-content;
+    height: 30px;
+}
+
+.buttonForm:hover {
+    background-color: #000000;
+}
