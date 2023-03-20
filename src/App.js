@@ -6,7 +6,6 @@ import ListaTarefas from "./components/Lista.jsx";
 import FormatStringDate from './functions/FormatStringDate.js'
 import FormatedStringDate from './functions/FormatedStringDate.js'
 
-
 import './style/Body.css';
 
 export default function App() {
@@ -41,6 +40,8 @@ export default function App() {
   function deletar(e) {
     e.preventDefault();
     const itemKey = e.target.parentElement.dataset.key;
+
+    console.log(e)
     
     const index = items.findIndex((element, index) => index === Number(itemKey));
 
