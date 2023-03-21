@@ -58,7 +58,7 @@ export default function App() {
   }
 
   function editar(e) {
-  e.preventDefault();
+  // e.preventDefault();
 
     let newItems = [...items];
 
@@ -73,12 +73,12 @@ export default function App() {
     if(itemReadOnly === true) {      
       newItems[index].readOnly = false;
       newItems[index].typeDate = "date";      
-      // newItems[index].btEditar = "Salvar";
+      newItems[index].btEditar = "Salvar";
 
     } else {
       newItems[index].readOnly = true;
       newItems[index].typeDate = "text";
-      // newItems[index].btEditar = "Editar"; 
+      newItems[index].btEditar = "Editar"; 
 
       const newTitle = parentElement[1].value;
       const formatedDate = FormatedStringDate(parentElement[2].value);

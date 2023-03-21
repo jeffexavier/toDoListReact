@@ -10,7 +10,7 @@ export default function ListaTarefas(props) {
                 <input id={"title" + (index)} className="input finishInput" type="checkbox" checked={e.checked} onClick={props.finished} readOnly={true}/>
                 <input id={"title" + (index)} className="input titleInput" type="text" placeholder={e.title} readOnly={e.readOnly}/> 
                 <input id={"date" + (index)} className="input dateInput" type={e.typeDate} placeholder={e.date} readOnly={e.readOnly}/>
-                <button id={"btEditar" + (index)} className="button btLista btEditar" onClick={props.edit}>Editar</button>
+                <button id={"btEditar" + (index)} className="button btLista btEditar" onClick={props.edit}>{e.btEditar}</button>
                 <button id={"btDeletar" + (index)} className="button btLista btDeletar" onClick={props.delete}>Excluir</button>
             </form>
         ))}
