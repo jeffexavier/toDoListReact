@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import {BrowserRouter as Router, Routers, Route, Link } from 'react-router-dom'
 
+import Menu from '/component/Menu.jsx'
 import Form from './components/Form.jsx';
 import ListaTarefas from "./components/Lista.jsx";
 
@@ -132,6 +134,18 @@ export default function App() {
 
 
   return (
+
+    <Router>
+      <Router>
+        <Route element={
+
+        } />
+        <Route />
+      </Router>
+    </Router>
+
+
+
     <div className="body">
     <Form click={click} />
     <ListaTarefas lista={items} delete={deletar} edit={editar} finished={finished}/>
