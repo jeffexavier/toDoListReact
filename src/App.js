@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {BrowserRouter as Router, Routers, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-import Menu from '/component/Menu.jsx'
+import Menu from './components/Menu.jsx'
 import Form from './components/Form.jsx';
 import ListaTarefas from "./components/Lista.jsx";
 
@@ -136,19 +136,21 @@ export default function App() {
   return (
 
     <Router>
-      <Router>
-        <Route element={
 
+      <Menu />
+      <Routes>
+        <Route exact path="/teste "element={
+          <h1>Teste do Jeffinho</h1>
         } />
         <Route />
-      </Router>
+        <Route exact path="/" element={
+              <div className="body">
+              <Form click={click} />
+              <ListaTarefas lista={items} delete={deletar} edit={editar} finished={finished}/>
+              </div>
+        }/>
+      </Routes>
     </Router>
 
-
-
-    <div className="body">
-    <Form click={click} />
-    <ListaTarefas lista={items} delete={deletar} edit={editar} finished={finished}/>
-    </div>
   );
 }
