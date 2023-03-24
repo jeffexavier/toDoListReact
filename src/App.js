@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
+import Menu from './components/Menu.jsx'
 import Form from './components/Form.jsx';
 import ListaTarefas from "./components/Lista.jsx";
 
@@ -109,11 +111,13 @@ export default function App() {
 
     if(itemChecked === false) {
     newItems[index].checked = true;
-    parentElement[0].checked = true
+    parentElement[0].checked = true;
+    console.log(parentElement[3])
+    
     
     } else {
       newItems[index].checked = false;
-      parentElement[0].checked = false
+      parentElement[0].checked = false;
     }
 
     console.log(parentElement[0].checked)
@@ -132,9 +136,23 @@ export default function App() {
 
 
   return (
-    <div className="body">
-    <Form click={click} />
-    <ListaTarefas lista={items} delete={deletar} edit={editar} finished={finished}/>
-    </div>
+
+    <Router>
+
+      <Menu />
+      <Routes>
+        <Route exact path="/teste "element={
+          <h1>Teste do Jeffinho</h1>
+        } />
+        <Route />
+        <Route exact path="/" element={
+              <div className="body">
+              <Form click={click} />
+              <ListaTarefas lista={items} delete={deletar} edit={editar} finished={finished}/>
+              </div>
+        }/>
+      </Routes>
+    </Router>
+
   );
 }

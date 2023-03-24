@@ -1,0 +1,26 @@
+nav {
+    background-color: #444;
+    display: flex;
+    min-height: max-content;
+    justify-content: end;
+    padding: 0px 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemLink {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    background-color: #444;
+    
+    
+    display: flex;
+    align-items: center;
+
+    min-height: 30px;
+    padding: 0px 10px;
+    margin: 10px 0px;
+
+    cursor: pointer;
+}
