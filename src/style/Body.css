@@ -1,5 +1,6 @@
 * {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 15px;
     background-color: #252628;
     margin: 0px;
@@ -16,5 +17,16 @@
 }
 
 .button {
+    color: white;
+    background-color: #222;
+    border-width: 0px;
+    border-radius: 5px;
+
+    font-weight: 200;
+    height: 30px;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: #111;
 }

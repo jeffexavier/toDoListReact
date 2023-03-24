@@ -6,7 +6,7 @@
 }
 
 .form {
-    background-color: #444444;
+    background-color: #444;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -39,13 +39,5 @@
 }
 
 .buttonForm {
-    color: white;
-    border-width: 0px;
-    border-radius: 5px;
     min-width: 150px;
-    height: 30px;
-}
-
-.buttonForm:hover {
-    background-color: #000000;
 }
