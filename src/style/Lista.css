@@ -8,24 +8,38 @@
 }
 
 .items {
-    background-color: #333333;
+    background-color: #444;
     padding: 10px;
+    border-color: red !important;
+    border-width: 50px !important;
     border-radius: 10px;
     margin-bottom: 10px;
     gap: 0px 10px;
     display: flex;
     min-width: 450px;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .checkedtrue {
-    background-color: #222222;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+    background-color: #222;
 }
 
 .checkedtrue .button {
-    background-color: #222222;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+    color: #666;
+    cursor: not-allowed;
+}
+
+.checkedtrue .button:hover {
+    color: #666;
+    background-color: #222;
+    cursor: not-allowed;
+}
+
+
+.checkedtrue .input::placeholder {
+    color: #666 !important;
+
+
     cursor: not-allowed;
 }
 
@@ -78,9 +92,5 @@
 }
 
 .btLista {
-    color: white;
-    border-width: 0px;
-    border-radius: 5px;
     min-width: 70px;
-    height: 30px;
 }
