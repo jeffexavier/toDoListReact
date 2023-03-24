@@ -29,9 +29,9 @@ export default function App() {
     
     setId(id+1);
 
-    const newItem = {id: id, className: "item", title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false};
+    const newItem = {id: id, title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false};
     const newItems = [...items, newItem];
-    
+    // teste
     // setItems(updatedItems);     
     // localStorage.setItem('items', JSON.stringify(updatedItems));
 
