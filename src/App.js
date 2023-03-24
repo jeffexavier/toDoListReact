@@ -111,11 +111,13 @@ export default function App() {
 
     if(itemChecked === false) {
     newItems[index].checked = true;
-    parentElement[0].checked = true
+    parentElement[0].checked = true;
+    console.log(parentElement[3])
+    
     
     } else {
       newItems[index].checked = false;
-      parentElement[0].checked = false
+      parentElement[0].checked = false;
     }
 
     console.log(parentElement[0].checked)
