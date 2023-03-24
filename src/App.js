@@ -31,7 +31,7 @@ export default function App() {
 
     const newItem = {id: id, title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false};
     const newItems = [...items, newItem];
-    
+    // teste
     // setItems(updatedItems);     
     // localStorage.setItem('items', JSON.stringify(updatedItems));
 
