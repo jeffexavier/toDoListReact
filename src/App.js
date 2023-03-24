@@ -112,7 +112,7 @@ export default function App() {
     if(itemChecked === false) {
     newItems[index].checked = true;
     parentElement[0].checked = true;
-    console.log(parentElement[3])
+    // console.log(parentElement[3])
     
     
     } else {
@@ -120,7 +120,7 @@ export default function App() {
       parentElement[0].checked = false;
     }
 
-    console.log(parentElement[0].checked)
+    // console.log(parentElement[0].checked)
 
     // setItems(newItems);
     // localStorage.setItem('items', JSON.stringify(newItems));
