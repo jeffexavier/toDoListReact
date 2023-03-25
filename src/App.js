@@ -8,6 +8,8 @@ import ListaTarefas from "./components/Lista.jsx";
 import FormatStringDate from './functions/FormatStringDate.js'
 import FormatedStringDate from './functions/FormatedStringDate.js'
 
+import setUse from './functions/setUse.js'
+
 import './style/Body.css';
 
 export default function App() {
@@ -15,11 +17,11 @@ export default function App() {
   const [items, setItems] = useState(JSON.parse(localStorage.getItem('items')) || []);
   const [id, setId] = useState(items.length);
 
-  function executeSetItems(constItems) {
-    setItems(constItems);     
+  // function executeSetItems(constItems, setUse) {
+  //   setItems(constItems);     
 
-    localStorage.setItem('items', JSON.stringify(constItems));
-  }
+  //   localStorage.setItem('items', JSON.stringify(constItems));
+  // }
 
   function click(e) {
     e.preventDefault();
@@ -29,13 +31,13 @@ export default function App() {
     
     setId(id+1);
 
-    const newItem = {id: id, title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false};
+    const newItem = {id: id, title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false, deleted: true};
     const newItems = [...items, newItem];
     // teste
     // setItems(updatedItems);     
     // localStorage.setItem('items', JSON.stringify(updatedItems));
 
-    executeSetItems(newItems);
+    setUse(newItems, setItems);
 
   }
 
@@ -56,7 +58,7 @@ export default function App() {
     // setItems(newItems);
     // localStorage.setItem('items', JSON.stringify(newItems));
 
-    executeSetItems(newItems);
+    setUse(newItems, setItems);
   }
 
   function editar(e) {
@@ -94,7 +96,7 @@ export default function App() {
     // setItems(newItems);
     // localStorage.setItem('items', JSON.stringify(newItems));
 
-    executeSetItems(newItems);
+    setUse(newItems, setItems);
   }
 
 
@@ -125,7 +127,7 @@ export default function App() {
     // setItems(newItems);
     // localStorage.setItem('items', JSON.stringify(newItems));
 
-    executeSetItems(newItems);
+    setUse(newItems, setItems);
 
   }
 
