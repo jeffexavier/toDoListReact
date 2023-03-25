@@ -2,5 +2,5 @@ export default function executeSetUse(constItems, setUse) {
     localStorage.setItem('items', JSON.stringify(constItems));
     setUse(constItems);
 
-    console.log("Tarefa adicionada!")
+    console.log("aaaTarefa adicionada!")
 };
