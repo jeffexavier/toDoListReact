@@ -2,7 +2,7 @@ nav {
     background-color: #444;
     display: flex;
     min-height: max-content;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0px 20px;
     align-items: center;
     gap: 10px;
