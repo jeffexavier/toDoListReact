@@ -14,11 +14,9 @@ export default function createItem(ev, items, setItems) {
     if(itemReadOnly === true) {      
         newItems[index].readOnly = false;
         newItems[index].typeDate = "date";      
-        newItems[index].btEditar = "Salvar";
     } else {
         newItems[index].readOnly = true;
         newItems[index].typeDate = "text";
-        newItems[index].btEditar = "Editar"; 
 
         const newTitle = parentElement[1].value;
         const newDate = parentElement[2].value;
