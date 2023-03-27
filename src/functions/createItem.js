@@ -12,5 +12,7 @@ export default function createItem(ev, items, setItems, id, setId) {
     const newItems = [...items, newItem];
 
     setUse(newItems, setItems);
+
+    
     
 };
