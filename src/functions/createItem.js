@@ -11,8 +11,5 @@ export default function createItem(ev, items, setItems, id, setId) {
     const newItem = {id: id, title, date: date, readOnly: true, typeDate: "text", btEditar: "Editar", checked: false, deleted: true};
     const newItems = [...items, newItem];
 
-    setUse(newItems, setItems);
-
-    
-    
+    setUse(newItems, setItems);    
 };

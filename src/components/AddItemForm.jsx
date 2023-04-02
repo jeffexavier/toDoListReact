@@ -12,10 +12,6 @@ export default function AddItemForm(props) {
     function createdItem(ev) { createItem(ev, items, setItems, id, setId) };
     function handleFormDateChange(ev) { setDateForm(ev.target.value); console.log('date') };
 
-useEffect(() => {
-    console.log("teste")
-}, [])
-
     return(
         <div id="formTarefa">
             <form className="form" onSubmit={createdItem}>

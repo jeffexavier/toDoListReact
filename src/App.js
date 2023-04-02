@@ -16,7 +16,7 @@ export default function App() {
 
       <Menu />
       <Routes>
-        <Route exact path="/teste"element={
+        <Route exact path="/teste" element={
           <SecondList /> 
         } />
         <Route />

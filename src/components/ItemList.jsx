@@ -17,7 +17,6 @@ export default function ListaTarefas(props) {
     function handleChange(ev) { handleChangeInputList(ev, items, setItems) };
    
     useEffect(() => {
-        console.log('teste')
         document.getElementById('titleForm').value = '';
         document.getElementById('dateForm').value = today();
       }, [items])
