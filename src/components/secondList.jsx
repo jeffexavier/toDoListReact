@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
 
 export default function SecondList() {
-  return (
-    <div>
-        <p>teste</p>
-    </div>
-  );
+    return (
+        <div>
+            <p>teste</p>
+        </div>
+    );
 }
