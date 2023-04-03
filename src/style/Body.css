@@ -3,6 +3,8 @@
     font-weight: 400;
     font-size: 15px;
     background-color: #252628;
+    border-width: 5px;
+    border-color: red;
     margin: 0px;
     min-width: max-content;
 }
