@@ -16,4 +16,4 @@ class Database {
         models.forEach((model) => model.init(this.connection));
     }
 }
-export default new Database(); // ERA Ó CHAMAR A FUNÇÃO DIRETO COM O '()' e exportar um new Database ao invés do Database.
+export default new Database(); // ERA SÓ CHAMAR A FUNÇÃO DIRETO COM O '()' e exportar um new Database ao invés do Database.
